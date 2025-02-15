@@ -1,15 +1,10 @@
-#include "App.h"
+#include "include/App.h"
 
 namespace Spark {
-	App::App() {
+	App::App() {}
+	App::~App() {}
 
-	}
-
-	App::~App() {
-
-	}
-
-	void App::Run() {
+	void App::run() {
 		while (true);
 	}
 }

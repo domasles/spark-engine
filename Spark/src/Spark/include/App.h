@@ -8,9 +8,10 @@ namespace Spark {
 			App();
 			virtual ~App();
 
-			void Run();
+			void run();
 	};
 
 	// NOTE: this function HAS to be defined in client apps
-	App* CreateApp();
+
+	App* createApp();
 }

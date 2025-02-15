@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Spark\include\Log.h" />
     <ClInclude Include="src\Spark.h" />
-    <ClInclude Include="src\Spark\App.h" />
-    <ClInclude Include="src\Spark\Core.h" />
-    <ClInclude Include="src\Spark\EntryPoint.h" />
+    <ClInclude Include="src\Spark\include\App.h" />
+    <ClInclude Include="src\Spark\include\Core.h" />
+    <ClInclude Include="src\Spark\include\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Spark\Log.cpp" />
     <ClCompile Include="src\Spark\App.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -66,6 +68,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SPARK_PLATFORM_WINDOWS;SPARK_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Spark\Vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,6 +84,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SPARK_PLATFORM_WINDOWS;SPARK_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Spark\Vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

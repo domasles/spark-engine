@@ -6,6 +6,6 @@ class Sandbox : public Spark::App {
 		~Sandbox() {}
 };
 
-Spark::App* Spark::CreateApp() {
+Spark::App* Spark::createApp() {
 	return new Sandbox();
 }
