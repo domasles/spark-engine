@@ -26,11 +26,6 @@
 *.a
 *.lib
 
-# Executables
-*.exe
-*.out
-*.app
-
 # Directories
 /bin
 /bin-int
@@ -38,3 +33,8 @@
 
 # User files
 *.user
+
+# Project files
+*.vcxproj
+*.vcxproj.filters
+*.sln
